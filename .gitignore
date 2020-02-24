@@ -1,0 +1,4 @@
+node_modules
+ecosystem.config.js
+package-lock.json
+public/uploads

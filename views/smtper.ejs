@@ -1,0 +1,63 @@
+<% layout('layout') -%>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-xs-12">
+            <h3>SMTP Checker</h3>
+            <form id="smtper">
+                <div id="emicalculatorinnerform">
+                    <div class="row form-group lamount">
+                        <label class="col-lg-4 control-label" for="host">Host</label>
+                        <div class="col-lg-6">
+                            <input class="form-control" id="host" name="host" value="smtp.gmail.com" type="text">
+                        </div>
+                    </div>
+                    <div class="sep row form-group lint">
+                        <label class="col-lg-4 control-label" for="port">Port</label>
+                        <div class="col-lg-6">
+                            <input class="form-control" id="port" name="port" value="587" type="number">
+                        </div>
+                    </div>
+                    
+                    <div class="sep row form-group lterm">
+                        <label class="col-lg-10 control-label">
+                            <input type="checkbox" name="tls" value="1"> Use Secure Connection
+                        </label>
+                    </div>
+                    <div class="sep row form-group lterm">
+                        <label class="col-lg-10 control-label"><input type="checkbox" name="auth" value="1" checked> Use Authentication</label>
+                    </div>
+                    <div class="sep row form-group auth">
+                        <label class="col-lg-4 control-label" for="username">Username</label>
+                        <div class="col-lg-6">
+                            <input class="form-control" id="username" name="username" value="" type="text">
+                        </div>
+                    </div>
+                    <div class="sep row form-group auth">
+                        <label class="col-lg-4 control-label" for="password">Password</label>
+                        <div class="col-lg-6">
+                            <input class="form-control" id="password" name="password" value="" type="password">
+                        </div>
+                    </div>
+                    <div class="sep row form-group">
+                        <label class="col-lg-4 control-label" for="from">Email from</label>
+                        <div class="col-lg-6">
+                            <input class="form-control" id="from" name="from" value="" type="email">
+                        </div>
+                    </div>
+                    <div class="sep row form-group">
+                        <label class="col-lg-4 control-label" for="to">Email to</label>
+                        <div class="col-lg-6">
+                            <input class="form-control" id="to" name="to" value="" type="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div id="error"></div>
+                    </div>
+                    <div class="sep row form-group">
+                        <input type="submit" value="Test" class="btn btn-success">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<% layout('layout') -%>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-sm-10 col-xs-12">
+            <h3>EMI Calculator</h3>
+            <form id="emicalculatorform">
+                <div id="emicalculatorinnerform">
+                    <div class="row form-group lamount">
+                        <label class="col-lg-4 control-label" for="loanamount">Loan Amount</label>
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input class="form-control" id="loanamount" name="loanamount" value="25,00,000" type="text">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">₹</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sep row form-group lint">
+                        <label class="col-lg-4 control-label" for="loaninterest">Interest Rate</label>
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input class="form-control" id="loaninterest" name="loaninterest" value="10.5" type="text">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sep row form-group lterm">
+                        <label class="col-lg-4 control-label" for="loanterm">Loan Tenure</label>
+                        <div class="col-lg-6">
+                            <div class="loantermwrapper">
+                                <div class="input-group">
+                                    <input class="form-control" id="loanterm" name="loanterm" value="20" type="text">
+                                    <div class="input-group-append tenure-choice" data-toggle="buttons">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-secondary active"> <input type="radio" name="loantenure" id="loanyears" value="loanyears" tabindex="4" autocomplete="off" checked="checked">Yr </label>
+                                            <label class="btn btn-secondary"> <input type="radio" name="loantenure" id="loanmonths" value="loanmonths" tabindex="5" autocomplete="off">Mo </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="emi"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="container" style="width:100%; height:400px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
